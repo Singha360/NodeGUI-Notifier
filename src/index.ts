@@ -1,5 +1,5 @@
 import { QMainWindow, QWidget, QLabel, FlexLayout, QPushButton,  QRadioButton, QAbstractButton, } from "@nodegui/nodegui";
-const notifier = require('node-notifier');
+const notifier = require("node-notifier");
 
 const win = new QMainWindow();
 win.setWindowTitle("Notification App");
@@ -20,10 +20,10 @@ label2.setText("Notification");
 const button = new QPushButton();
 button.setObjectName("button");
 button.setText("Display Notification");
-button.addEventListener('clicked' ,  () => {
+button.addEventListener("clicked" ,  () => {
   notifier.notify({
-    title: 'My notification',
-    message: 'Hello, there!'
+    title: "My notification",
+    message: "Hello, there!"
   });
 })
 
@@ -34,9 +34,9 @@ win.setCentralWidget(centralWidget);
 win.setStyleSheet(
   `
     #myroot {
-      height: '100%';
-      align-items: 'center';
-      justify-content: 'center';
+      height: "100%";
+      align-items: "center";
+      justify-content: "center";
     }
     #mylabel {
       font-size: 16px;
