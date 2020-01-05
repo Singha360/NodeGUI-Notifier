@@ -3,7 +3,7 @@ const notifier = require("node-notifier");
 
 const win = new QMainWindow();
 win.setWindowTitle("Notification App");
-win.setFixedSize(450, 300)
+win.setMinimumSize(450, 300)
 
 const centralWidget = new QWidget();
 centralWidget.setObjectName("myroot");
