@@ -35,5 +35,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
+  },
+  node: {
+    __filename: true,
+    __dirname: true
   }
 };
