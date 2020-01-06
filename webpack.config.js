@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: process.NODE_ENV || "development",
   entry: "./src",
-  devtool: "cheap-eval-source-map",
+  devtool: "cheap-eval-source-map", //Check https://webpack.js.org/configuration/devtool/ for options.
   target: "node",
   output: {
     path: path.resolve(__dirname, "dist"),
