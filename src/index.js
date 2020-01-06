@@ -1,9 +1,16 @@
-import { QMainWindow, QWidget, QLabel, FlexLayout, QPushButton,  QRadioButton, QAbstractButton, } from "@nodegui/nodegui";
+import {
+  QMainWindow,
+  QWidget,
+  QLabel,
+  FlexLayout,
+  QPushButton
+} from "@nodegui/nodegui";
+
 const notifier = require("node-notifier");
 
 const win = new QMainWindow();
 win.setWindowTitle("Notification App");
-win.setMinimumSize(450, 300)
+win.setMinimumSize(450, 300);
 
 const centralWidget = new QWidget();
 centralWidget.setObjectName("myroot");
@@ -20,12 +27,13 @@ label2.setText("Notification");
 const button = new QPushButton();
 button.setObjectName("button");
 button.setText("Display Notification");
-button.addEventListener("clicked" ,  () => {
+button.addEventListener("clicked", () => {
+  console.log("You clicked the button");
   notifier.notify({
     title: "My notification",
     message: "Hello, there!"
   });
-})
+});
 
 rootLayout.addWidget(label);
 rootLayout.addWidget(label2);
@@ -43,6 +51,9 @@ win.setStyleSheet(
       font-weight: bold;
       padding: 1;
     }
+    #button {
+      background-color: red;
+  }
     #button:hover {
       color: dodgerblue;
     }
@@ -50,4 +61,4 @@ win.setStyleSheet(
 );
 win.show();
 
-(global as any).win = win;
+global.win = win;

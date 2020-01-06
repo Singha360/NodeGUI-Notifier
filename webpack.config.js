@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
   mode: process.NODE_ENV || "development",
   entry: "./src",
+  devtool: "none",
   target: "node",
   output: {
     path: path.resolve(__dirname, "dist"),

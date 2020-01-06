@@ -16,6 +16,7 @@
     "node-notifier": "^6.0.0"
   },
   "devDependencies": {
+    "@nodegui/packer": "^1.1.2",
     "@types/node": "^12.12.21",
     "file-loader": "^5.0.2",
     "node-loader": "^0.6.0",
