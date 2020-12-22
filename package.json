@@ -13,7 +13,7 @@
   "dependencies": {
     "@nodegui/nodegui": "^0.12.1",
     "@types/node-notifier": "^5.4.0",
-    "node-notifier": "^6.0.0"
+    "node-notifier": "^8.0.1"
   },
   "devDependencies": {
     "@nodegui/packer": "^1.1.2",
